@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sunday Test 2</title>
+    <style>
+        body {
+            margin-top: 300px;
+        }
+
+        .container {
+            display: flex;
+            width: 600px;
+            height: 100px;
+            background-color: red;
+            justify-content:space-evenly;
+            align-items: center;
+            margin: 100px auto;
+         
+        }
+
+        #child1,
+        #child2,
+        #child3 {
+            display: flex;
+            height: 40px;
+            width: 150px;
+            background-color: green;
+            margin:0 -4em;
+        }
+
+        #child1 {
+            display: flex;
+            justify-content: start;
+            color: rgb(46, 42, 42);
+        }
+
+        #child2 {
+            display: flex;
+            color: rgb(46, 42, 42);
+            justify-content: flex-start;
+            align-items: center;
+        }
+        #child3{
+            display: flex;
+             color: rgb(46, 42, 42);
+             justify-content: right;
+             align-items: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="child1">Child1</div>
+        <div id="child2">Child2</div>
+        <div id="child3">Child3</div>
+
+    </div>
+</body>
+
+</html>
