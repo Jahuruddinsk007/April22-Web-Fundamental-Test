@@ -1,0 +1,69 @@
+There are four ways a function can be created in JavaScript. They are as follows:
+
+i)A function as a statement
+ii)A function as an expression
+iii)A function as an arrow function
+iv)A function created using the Function constructor
+
+i)A Function as a Statement
+
+A function as a statement can be created as shown the following code example:
+
+function Add(num1,num2){
+    let sum = num1+ num2; 
+    return sum; 
+}
+
+let res = Add(7,8);
+console.log(res); // 15
+JavaScript
+
+A function statement starts with the function keyword. It can return a primitive type value, object, or another function
+
+
+ii)A Function as an Expression
+
+A function as an expression can be created as shown in the following code example.
+
+let add = function a(num1,num2){
+    let sum = num1+ num2; 
+    return sum;
+}
+
+let res = add(8,9);
+console.log(res);// 17
+JavaScript
+In a function expression, you assign a function to a variable.
+
+
+
+iii)An Arrow Function
+
+The arrow functions were introduced in ECMA 2015 with the main purpose of giving a shorter syntax to a function expression. Besides providing shorter syntax, which increases the readability of the code, it does not have its own value of the this object. The value of this object inside an arrow function is inherited from the enclosing scope.
+
+You can write an arrow function to add two numbers as shown in the next code example.
+
+var add = (num1, num2)=> num1+num2; 
+let res = add(5,2);
+console.log(res); // 7 
+
+
+iv)Using Function Constructor
+
+A function can be dynamically created using the Function constructor, but it suffers from security and performance issues and is not advisable to use.
+
+You can create a function using the Function constructor as shown in the following example.
+
+var add = Function('num1','num2','return num1+num2');
+let res = add (7,8);
+console.log(res); // 15
+JavaScript
+In the Function constructor, you pass parameters and function body as a string. The function created with the Function constructor is always created in the global scope
+
+
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Question 3</title>
+</head>
+<body>
+    <h1 style="text-align:center;">Displaying the n terms of odd natural number and their sum.</h1>
+    <script>
+        let number = parseInt(prompt("Enter the number of terms: "));
+        let sum = 0;
+
+        console.log("The odd numbers are :")
+        for(let i=1;i<=number;i++){
+            console.log(2*i-1);
+            sum +=2*i-1;
+        }
+        console.log("The Sum of odd Natural Number upto "+ number +" terms is : "+ sum);
+    </script>
+</body>
+</html>
