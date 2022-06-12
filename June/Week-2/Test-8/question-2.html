@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Question 2</title>
+</head>
+<body>
+    <h3 style="text-align:center;">Q. In how many ways can we loop in an array describe each with an example ?</h3>
+    <h1 style="text-align:center;">To See the answer please console it.</h1>
+    <script>
+        //  question no.2
+
+            //  for Loop
+
+            // array of objects
+        var array = [
+            {id: 0, name: 'Jahir', age: 20},
+            {id: 1, name: 'Kabir', age: 22},
+            {id: 2, name: 'Babor', age: 24},
+            {id: 3, name: 'Nasir', age: 26},
+        ];
+            //  just want to get the names of all of them
+        for(let i = 0; i < array.length; i++){
+            console.log(array[i].name);
+        }
+
+                    /*
+                    Output:
+                        Jahir
+                        Kabir
+                        Bob
+                        Nasir
+                    */
+
+
+
+
+            // while Loop
+
+            // same aray to be used
+                    var i = 0;
+                    while(i < array.length) {
+                        console.log(array[i].name)
+                        i++
+                    }
+
+                    /*
+                    Output:
+                        Jahir
+                        Kabir
+                        Babor
+                        Nasir
+                    */
+
+            // do/while Loop
+
+            // using same array
+                var i = 0;
+                do {
+                    console.log(array[i].name)
+                    i++
+                } while(i < array.length)
+                
+                /*
+                Output:
+                    Jahir
+                    Kabir
+                    Babor
+                    Nasir
+                */
+
+            // for of
+
+            for (let index of array) {
+    console.log(index.name)
+}
+
+                /*
+                Output:
+                    Jahir
+                    Kabir
+                    Babor
+                    Nasir
+                */
+
+            // for each
+                
+                array.forEach(function(profile, index, myArray) {
+                console.log(`Index: ${index}, Name: ${profile.name}`);
+            });
+
+            /*
+            Output:
+                Jahir
+                Kabir
+                Babor
+                Nasir
+            */
+
+
+    </script>
+</body>
+</html>
